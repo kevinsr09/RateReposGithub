@@ -1,20 +1,12 @@
 import Constants from "expo-constants";
 import { Text, View } from "react-native";
 
-import { RepositoryList } from "./RepositoryList";
+import { RepositoryList } from "./components/RepositoryList";
+import { AppBar } from "./components/AppBar";
 export const Main = () => {
   return (
-    <View style={{ marginTop: Constants.statusBarHeight }}>
-      <Text
-        style={{
-          fontSize: 24,
-          fontWeight: "bold",
-          textAlign: "center",
-          padding: 10,
-        }}
-      >
-        hello world
-      </Text>
+    <View style={{ flex: 1 }}>
+      <AppBar />
 
       <RepositoryList />
     </View>

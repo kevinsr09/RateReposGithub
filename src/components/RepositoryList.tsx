@@ -1,7 +1,7 @@
 import { FlatList, Text } from "react-native";
 
-import { RepositoryItem } from "./components/RepositoryItem";
-import { repositories } from "./repositories";
+import { RepositoryItem } from "./RepositoryItem";
+import { repositories } from "../repositories";
 
 export const RepositoryList = () => {
   return (
@@ -9,6 +9,7 @@ export const RepositoryList = () => {
       data={repositories}
       ItemSeparatorComponent={() => <Text />}
       renderItem={({ item: repo }) => <RepositoryItem repo={repo} />}
+      
     />
   );
 };
