@@ -20,7 +20,7 @@ const RepositoryHeader = ({ fullName, description, language, ownerAvatarUrl }) =
 
 export const RepositoryItem = ({ repo }) => {
   return (
-    <View key={repo.id} style={styles.container}>
+    <View key={ repo.id} style={styles.container}>
 
       <RepositoryHeader  {...repo}/>
       
